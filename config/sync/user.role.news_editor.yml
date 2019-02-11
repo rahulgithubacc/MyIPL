@@ -1,4 +1,4 @@
-uuid: f577f5f4-3c3a-4eaa-8514-7d9be31e4162
+uuid: ecda40c7-489c-4f4e-b6b7-a31e06ab3675
 langcode: en
 status: true
 dependencies: {  }
@@ -7,10 +7,16 @@ label: 'News Editor'
 weight: 3
 is_admin: null
 permissions:
+  - 'create article content'
   - 'create news_editor content'
+  - 'create players_ content'
+  - 'create teams content'
+  - 'delete any article content'
   - 'delete any news_editor content'
+  - 'delete any page content'
+  - 'delete any players_ content'
+  - 'delete any teams content'
+  - 'delete article revisions'
   - 'delete news_editor revisions'
+  - 'delete own article content'
   - 'delete own news_editor content'
-  - 'edit own news_editor content'
-  - 'revert news_editor revisions'
-  - 'view news_editor revisions'
