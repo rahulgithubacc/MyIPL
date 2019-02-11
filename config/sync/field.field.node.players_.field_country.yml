@@ -1,0 +1,21 @@
+uuid: c318f71e-7748-4ef6-99b2-85be31c2f228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.players_
+  module:
+    - text
+id: node.players_.field_country
+field_name: field_country
+entity_type: node
+bundle: players_
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

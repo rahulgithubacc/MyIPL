@@ -1,0 +1,18 @@
+uuid: d8539e20-fba8-4ca5-a528-3e74e1eccdf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: TEAMS
+type: teams
+description: 'Those teams are playing IPL 2019'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

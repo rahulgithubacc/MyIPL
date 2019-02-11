@@ -1,0 +1,22 @@
+uuid: 6bd5730d-a779-4a1b-9e61-cfb239a40e5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.news_editor
+  module:
+    - text
+id: node.news_editor.body
+field_name: body
+entity_type: node
+bundle: news_editor
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

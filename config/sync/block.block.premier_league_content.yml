@@ -1,0 +1,22 @@
+uuid: 31d59f20-2db2-4b11-a5c6-970fe3123008
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - premier_league
+_core:
+  default_config_hash: TnHVR9L1st6KM8c7sDJXZoUbpBUWBGJlz3kRZglGZ5o
+id: premier_league_content
+theme: premier_league
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

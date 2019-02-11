@@ -1,0 +1,21 @@
+uuid: 16564b95-661d-4bec-97a5-8e69e210e209
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dob
+    - node.type.players_
+  module:
+    - datetime
+id: node.players_.field_dob
+field_name: field_dob
+entity_type: node
+bundle: players_
+label: DOB
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
