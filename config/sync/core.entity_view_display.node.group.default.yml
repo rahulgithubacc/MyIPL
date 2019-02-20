@@ -1,0 +1,44 @@
+uuid: b9fc3b09-652f-4d37-b765-e713538619f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.group.body
+    - field.field.node.group.field_description
+    - field.field.node.group.field_name_1
+    - node.type.group
+  module:
+    - text
+    - user
+id: node.group.default
+targetEntityType: node
+bundle: group
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_name_1:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

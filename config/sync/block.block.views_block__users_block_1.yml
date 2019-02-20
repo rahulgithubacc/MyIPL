@@ -1,0 +1,24 @@
+uuid: cb542388-30c0-414e-919e-9206b85d7c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.users
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__users_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:users-block_1'
+settings:
+  id: 'views_block:users-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

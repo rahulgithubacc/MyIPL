@@ -1,0 +1,14 @@
+uuid: 2814a6d3-56c2-4e0b-822b-9ae945506cbf
+name: IPL
+mail: rahul.deshmukh@qed42.com
+slogan: 'Cricket fever starts'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

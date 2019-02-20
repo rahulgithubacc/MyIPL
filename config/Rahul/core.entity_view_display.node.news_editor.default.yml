@@ -1,0 +1,39 @@
+uuid: f4a90276-85eb-4e47-833d-c9e0879281ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_editor.body
+    - field.field.node.news_editor.field_image2
+    - node.type.news_editor
+  module:
+    - image
+    - text
+    - user
+id: node.news_editor.default
+targetEntityType: node
+bundle: news_editor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image2:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

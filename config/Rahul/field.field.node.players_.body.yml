@@ -1,0 +1,22 @@
+uuid: 4988c970-8f37-4958-adea-208ec6a382c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.players_
+  module:
+    - text
+id: node.players_.body
+field_name: body
+entity_type: node
+bundle: players_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

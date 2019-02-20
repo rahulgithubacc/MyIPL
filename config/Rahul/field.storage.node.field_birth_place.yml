@@ -1,0 +1,21 @@
+uuid: 7faaf2b8-ca55-44dd-81b0-9bfcd3a455e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_birth_place
+field_name: field_birth_place
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

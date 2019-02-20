@@ -1,0 +1,25 @@
+uuid: 4ddb1d00-0985-4489-9e1d-526667bd598d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - premier_league
+_core:
+  default_config_hash: FShX_EAsUfEE1mZQK2-qZ5y4WFlFzyDqgdQ8iTFogQg
+id: premier_league_branding
+theme: premier_league
+region: logo
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Fever goes on'
+  provider: system
+  label_display: visible
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

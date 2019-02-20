@@ -1,0 +1,25 @@
+uuid: 808aee15-5690-4019-a150-7bcfaedeaf86
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:df22cb40-4887-4d5c-88ec-be778ac14a4c'
+  module:
+    - block_content
+  theme:
+    - premier_league
+id: iplschedule2019
+theme: premier_league
+region: content_top1
+weight: -4
+provider: null
+plugin: 'block_content:df22cb40-4887-4d5c-88ec-be778ac14a4c'
+settings:
+  id: 'block_content:df22cb40-4887-4d5c-88ec-be778ac14a4c'
+  label: 'IPL Schedule 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

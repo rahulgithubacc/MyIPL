@@ -1,0 +1,22 @@
+uuid: a6f87085-a989-4025-b4a0-27202daf8773
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.teams
+  module:
+    - text
+id: node.teams.body
+field_name: body
+entity_type: node
+bundle: teams
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

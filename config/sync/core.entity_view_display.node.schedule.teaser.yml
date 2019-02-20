@@ -1,0 +1,29 @@
+uuid: 79d1fa35-0b73-47dd-b079-2c9b76414502
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.schedule.body
+    - node.type.schedule
+  module:
+    - text
+    - user
+id: node.schedule.teaser
+targetEntityType: node
+bundle: schedule
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

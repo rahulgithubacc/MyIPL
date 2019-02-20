@@ -1,0 +1,28 @@
+uuid: 97f4a6df-2a7a-4efd-9a49-06acfd28a1fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.schedule.body
+    - node.type.schedule
+  module:
+    - text
+    - user
+id: node.schedule.default
+targetEntityType: node
+bundle: schedule
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,78 @@
+uuid: f2237644-314c-4fad-9e39-86b86910d245
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.players_.body
+    - field.field.node.players_.field_birth_place
+    - field.field.node.players_.field_country
+    - field.field.node.players_.field_dob
+    - field.field.node.players_.field_image_
+    - field.field.node.players_.field_name
+    - node.type.players_
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.players_.teaser
+targetEntityType: node
+bundle: players_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 6
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_birth_place:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_country:
+    type: text_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_dob:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_image_:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

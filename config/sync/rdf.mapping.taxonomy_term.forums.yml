@@ -1,0 +1,23 @@
+uuid: b284c5d2-35da-4d45-990b-3a1c6b8f4734
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+  module:
+    - taxonomy
+_core:
+  default_config_hash: HtygwmxRqvrF8r4tIqtZ88TBGqEmKwXhcEzt9CY19eA
+id: taxonomy_term.forums
+targetEntityType: taxonomy_term
+bundle: forums
+types:
+  - 'sioc:Container'
+  - 'sioc:Forum'
+fieldMappings:
+  name:
+    properties:
+      - 'schema:name'
+  description:
+    properties:
+      - 'schema:description'

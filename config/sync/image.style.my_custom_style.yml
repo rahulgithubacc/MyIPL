@@ -3,5 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: my_custom_style
-label: 'my custom style'
-effects: {  }
+label: 'My Custom Style'
+effects:
+  4ac2657d-b567-4156-b484-536fc87bd4dc:
+    uuid: 4ac2657d-b567-4156-b484-536fc87bd4dc
+    id: image_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

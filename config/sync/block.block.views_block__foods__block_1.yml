@@ -1,0 +1,25 @@
+uuid: d45321e6-abb3-43b8-a3c9-8eb3e9f82b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.foods_
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__foods__block_1
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:foods_-block_1'
+settings:
+  id: 'views_block:foods_-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

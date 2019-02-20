@@ -62,11 +62,12 @@
         ]
     },
     "extra": {
+         "enable-patching":true,
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "installer-paths": {
+        "installer-paths": {    
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
@@ -78,6 +79,11 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            }
+        },
+        "patches":{
+            "drupal/core":{
+                "AJAX forms should submit to $form['#action'] instead of <current>":"https://www.drupal.org/files/issues/2018-10-18/durpal-2504115-28.patch"
             }
         }
     }

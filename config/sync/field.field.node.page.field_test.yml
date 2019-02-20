@@ -1,0 +1,29 @@
+uuid: 6a15b167-94ab-47e9-aab6-d1ec1a7934ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.page
+    - taxonomy.vocabulary.teams
+id: node.page.field_test
+field_name: field_test
+entity_type: node
+bundle: page
+label: Test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      teams: teams
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

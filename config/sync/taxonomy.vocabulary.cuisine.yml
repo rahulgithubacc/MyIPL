@@ -1,0 +1,9 @@
+uuid: aec78d7c-94e3-4139-bfde-38de486a0e49
+langcode: en
+status: true
+dependencies: {  }
+name: Cuisine
+vid: cuisine
+description: 'Tasty food always available.'
+hierarchy: 0
+weight: 0

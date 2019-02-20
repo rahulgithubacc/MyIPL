@@ -1,0 +1,7 @@
+uuid: 1d7205e6-bd52-44d9-a825-a9cfdc734d61
+langcode: en
+status: true
+dependencies: {  }
+name: my_custom_style
+label: 'my custom style'
+effects: {  }
