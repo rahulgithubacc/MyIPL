@@ -1,0 +1,16 @@
+uuid: e8aad6c1-0b28-41b1-b662-eadedbe26348
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  keywords: Drupal
+  shortlink: '[site:url]'
+  title: Testing
+  canonical_url: '[site:url]'
+  description: 'This is for testing purpose'
+  generator: 'Drupal 8(http://drupal.org)'
+  abstract: 'This is for testing purpose'

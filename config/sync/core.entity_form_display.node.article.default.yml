@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_feature_video
     - field.field.node.article.field_image
+    - field.field.node.article.field_meta_tag
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -15,6 +16,7 @@ dependencies:
     - content_moderation
     - image
     - media_library
+    - metatag
     - path
     - text
 _core:
@@ -59,6 +61,12 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_meta_tag:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3

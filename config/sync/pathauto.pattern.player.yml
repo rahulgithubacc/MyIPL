@@ -1,0 +1,23 @@
+uuid: 8d4a6bbe-a646-4df5-af31-b5602e0084a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: player
+label: player
+type: 'canonical_entities:node'
+pattern: 'players/[node:title]'
+selection_criteria:
+  bdf5ab84-7958-4ff5-b211-7cecb1e1aba1:
+    id: node_type
+    bundles:
+      photo_gallery: photo_gallery
+      players_: players_
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bdf5ab84-7958-4ff5-b211-7cecb1e1aba1
+selection_logic: and
+weight: -5
+relationships: {  }
