@@ -9,9 +9,77 @@ dependencies:
     - field.field.node.teams.field_team__
     - node.type.teams
   module:
+    - field_group
     - image
     - text
     - user
+third_party_settings:
+  field_group:
+    group_tab:
+      children:
+        - group_body
+        - group_list_of_players
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tab
+      region: content
+    group_body:
+      children:
+        - body
+      parent_name: group_tab
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Body
+      region: content
+    group_list_of_players:
+      children:
+        - field_team__
+      parent_name: group_tab
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'List of Players'
+      region: content
+    group_2nd_main_tab:
+      children:
+        - group_list_of_players1
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: '2nd Main Tab'
+      region: content
+    group_list_of_players1:
+      children:
+        - field_logo
+      parent_name: group_2nd_main_tab
+      weight: 1
+      format_type: tab
+      format_settings:
+        label: Logo
+        formatter: closed
+        description: ''
+        id: ''
+        classes: ''
+      label: Logo
+      region: content
 id: node.teams.default
 targetEntityType: node
 bundle: teams
@@ -20,12 +88,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     region: content
   field_logo:
-    weight: 103
+    weight: 5
     label: above
     settings:
       image_style: ''
@@ -34,14 +102,14 @@ content:
     type: image
     region: content
   field_team:
-    weight: 102
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_team__:
-    weight: 104
+    weight: 22
     label: above
     settings:
       link: true
@@ -49,8 +117,8 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
