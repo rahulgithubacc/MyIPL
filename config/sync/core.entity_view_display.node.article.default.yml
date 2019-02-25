@@ -10,14 +10,174 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_meta_tag
     - field.field.node.article.field_tags
+    - field.field.node.article.layout_builder__layout
     - image.style.large
     - node.type.article
+  content:
+    - 'block_content:basic:a098ee7f-406c-4733-8228-5a0a5a11b972'
   module:
+    - block_content
     - comment
     - image
+    - layout_builder
+    - layout_discovery
     - metatag
     - text
     - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_twocol
+        layout_settings: {  }
+        components:
+          b032e20c-02d1-4958-8496-0a23e7dc3779:
+            uuid: b032e20c-02d1-4958-8496-0a23e7dc3779
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_image'
+              formatter:
+                type: image
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 0
+          422935e5-6d0d-470c-ac8f-999d96db1b11:
+            uuid: 422935e5-6d0d-470c-ac8f-999d96db1b11
+            region: second
+            configuration:
+              id: 'block_content:a098ee7f-406c-4733-8228-5a0a5a11b972'
+              label: NEWS
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          c27a35ec-59dc-4fa0-9c2c-1724d57dabec:
+            uuid: c27a35ec-59dc-4fa0-9c2c-1724d57dabec
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:content_moderation_control'
+            additional: {  }
+            weight: 0
+          53cc8b2f-cf18-4b18-a25e-c24b678b885c:
+            uuid: 53cc8b2f-cf18-4b18-a25e-c24b678b885c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:body'
+              formatter:
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 2
+          18ac8b51-cbce-4bf5-b6b8-949ca20b6c31:
+            uuid: 18ac8b51-cbce-4bf5-b6b8-949ca20b6c31
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_tags'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          cd1d3bac-c807-4c7f-9cab-e9b3ecfa336d:
+            uuid: cd1d3bac-c807-4c7f-9cab-e9b3ecfa336d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:links'
+            additional: {  }
+            weight: 4
+          05f60c95-f304-4a69-9506-d618cdb0e76d:
+            uuid: 05f60c95-f304-4a69-9506-d618cdb0e76d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:comment'
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          c0aaefda-4161-422c-9e9b-bce6af928708:
+            uuid: c0aaefda-4161-422c-9e9b-bce6af928708
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_feature_video'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 6
+          6cc29f38-df1e-4bab-94f4-dd645e0844be:
+            uuid: 6cc29f38-df1e-4bab-94f4-dd645e0844be
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:flag_bookmark'
+            additional: {  }
+            weight: 7
+          f12f912a-8086-4ffe-b583-4970a370d05d:
+            uuid: f12f912a-8086-4ffe-b583-4970a370d05d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_meta_tag'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: metatag_empty_formatter
+            additional: {  }
+            weight: 8
+    allow_custom: true
+    enabled: true
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -89,4 +249,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
