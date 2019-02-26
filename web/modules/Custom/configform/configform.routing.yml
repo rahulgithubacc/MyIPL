@@ -1,0 +1,7 @@
+configform:
+  path: '/myform'
+  defaults:
+    _form: 'Drupal\configform\Form\SimpleConfigForm'
+    _title: 'Custom Module for building forms'
+  requirements:
+    _permission: 'access content'    

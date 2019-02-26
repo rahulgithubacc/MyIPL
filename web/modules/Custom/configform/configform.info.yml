@@ -1,0 +1,7 @@
+name: configform
+type: module
+description: 'This is a custom module for building cofig forms'
+package: Custom
+version: VERSION
+core: 8.x
+configure: custom.admin_display
