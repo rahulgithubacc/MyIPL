@@ -4,4 +4,12 @@ configform:
     _form: 'Drupal\configform\Form\SimpleConfigForm'
     _title: 'Custom Module for building forms'
   requirements:
+    _permission: 'access content'
+        
+configform.simpleform:
+  path: '/mysimpleform'
+  defaults:
+    _form: 'Drupal\configform\Form\SimpleForm'
+    _title: 'Custom Module for building normal forms'
+  requirements:
     _permission: 'access content'    

@@ -1,6 +1,6 @@
 name: configform
 type: module
-description: 'This is a custom module for building cofig forms'
+description: 'This is a custom module for building config forms'
 package: Custom
 version: VERSION
 core: 8.x

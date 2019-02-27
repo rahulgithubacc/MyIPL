@@ -1,0 +1,6 @@
+config.admin: 
+  title: 'Custom Form Setings'
+  description: 'New menu link created on 2602'
+  parent: system.admin_config_development
+  route_name: configform
+  weight: 100
