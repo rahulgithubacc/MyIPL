@@ -4,12 +4,19 @@ configform:
     _form: 'Drupal\configform\Form\SimpleConfigForm'
     _title: 'Custom Module for building forms'
   requirements:
-    _permission: 'access content'
-        
+    _permission: 'access content'       
 configform.simpleform:
   path: '/mysimpleform'
   defaults:
     _form: 'Drupal\configform\Form\SimpleForm'
     _title: 'Custom Module for building normal forms'
   requirements:
-    _permission: 'access content'    
+    _permission: 'access content'
+configform.hello_drupal:
+  path: '/hello_drupal'
+  defaults:
+    _controller: 'Drupal\configform\Controller\HelloController::content'
+    _title: 'Hello'
+  requirements:
+    _permission: 'access content'  
+          
