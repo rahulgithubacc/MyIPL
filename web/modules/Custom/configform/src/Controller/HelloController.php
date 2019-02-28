@@ -7,7 +7,7 @@ class HelloController extends ControllerBase {
       return [
        
         '#type' => 'markup',
-        '#markup' =>'<h1><b>' . $this->t('Hello, World!'),
+        '#markup' =>'<h1><b>' . $this->t('Hello, World!').'</b></h1>',
       ];
     }
 }    

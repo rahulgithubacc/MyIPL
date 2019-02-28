@@ -16,7 +16,7 @@ configform.hello_drupal:
   path: '/hello_drupal'
   defaults:
     _controller: 'Drupal\configform\Controller\HelloController::content'
-    _title: 'Hello'
+    _title: 
   requirements:
     _permission: 'access content'  
           
