@@ -20,6 +20,7 @@ permissions:
   - 'edit any blog content'
   - 'edit own blog content'
   - 'edit own comments'
+  - 'rahul hello route'
   - 'revert all revisions'
   - 'use new_workflow transition publish'
   - 'view all revisions'

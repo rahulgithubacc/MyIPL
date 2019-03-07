@@ -19,4 +19,24 @@ configform.hello_drupal:
     _title: 
   requirements:
     _permission: 'access content'  
-          
+configform.hello_world:
+  path: '/hello_world' 
+  defaults:
+    _controller: 'Drupal\configform\Controller\HelloWorld::content'  
+    _title:
+  requirements:
+    _permission: 'access content'  
+hello.dynamic_user:
+  path: '/hello/{name}'
+  defaults:
+    _controller: 'Drupal\configform\Controller\HelloDynamic::content'
+    _title: 'Hello'
+  requirements:
+    _permission: 'rahul hello route'   
+hello.author:
+  path: '/para/{nodeid}'          
+  defaults:
+    _controller: 'Drupal\configform\Controller\HelloAuthor::content'  
+    _title: 'Hello'
+  requirements:
+    _permission: 'rahul hello route'  
