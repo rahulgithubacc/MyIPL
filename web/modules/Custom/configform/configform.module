@@ -9,6 +9,7 @@ use Drupal\Core\Entity\EntityInterface;
  * @see \Drupal\node\Tests\NodeSaveTest::testNodeSaveOnInsert()
  */
 function configform_node_insert(NodeInterface $node) {
+ 
   // Set the node title to the node ID and save.
   if ($node->getType() == 'page') {
     $title = $node->getTitle();

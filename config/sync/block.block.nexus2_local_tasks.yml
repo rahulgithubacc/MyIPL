@@ -1,0 +1,22 @@
+uuid: dec95ed2-cb38-46f5-a32e-eac7adc6fb7b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nexus
+_core:
+  default_config_hash: zIiTlukFnIQkzOWKrRQQc1YoVRvprzbihfbA_QmG0pE
+id: nexus2_local_tasks
+theme: nexus
+region: help
+weight: 30
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

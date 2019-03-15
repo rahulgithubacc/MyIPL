@@ -1,0 +1,22 @@
+uuid: 7dc47ceb-8384-4c28-814c-cb334fd60d75
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nexus
+_core:
+  default_config_hash: lpdetJ9nYS1PAk8QLn1_KSuwitQepYbGtINtJTOhf3M
+id: nexus2_status_messages
+theme: nexus
+region: highlighted
+weight: 60
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

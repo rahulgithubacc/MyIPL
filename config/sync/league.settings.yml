@@ -1,0 +1,18 @@
+copyright_text: 'Footer copyright'
+slideshow_display: 1
+slide_title_1: 'What We Do 1'
+slide_title_2: 'Who We Are 2'
+slide_title_3: 'Our Service 3'
+slide_url_1: ''
+slide_url_2: ''
+slide_url_3: ''
+show_social_icon: 5
+facebook_url: 'https://www.facebook.com'
+google_plus_url: 'https://plus.google.com'
+twitter_url: 'https://twitter.com'
+linkedin_url: 'https://www.linkedin.com'
+pinterest_url: 'https://www.pinterest.com'
+fly_text: 'Test fly text'
+show_flytext: 1
+_core:
+  default_config_hash: mDnTaMth5chJGOFv_SFDZAPTQHle7ozOlzYkBW5uSaU

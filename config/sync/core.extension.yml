@@ -20,7 +20,6 @@ module:
   content_moderation: 0
   contextual: 0
   ctools: 0
-  custom: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -39,6 +38,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
@@ -96,6 +96,9 @@ theme:
   bartik: 0
   seven: 0
   premier_league: 0
+  nexus: 0
+  nexus2: 0
+  league: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

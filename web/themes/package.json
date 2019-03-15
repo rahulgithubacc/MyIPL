@@ -1,0 +1,22 @@
+{
+  "name": "custom",
+  "version": "1.0.0",
+  "description": "This is new gulp installation",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "skip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "skip"
+  },
+  "keywords": [
+    "skip"
+  ],
+  "author": "rahul",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
