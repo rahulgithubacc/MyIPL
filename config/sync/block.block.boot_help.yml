@@ -1,0 +1,22 @@
+uuid: 47dc0725-6831-438a-aeea-b901b03593c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - boot
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: boot_help
+theme: boot
+region: header
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

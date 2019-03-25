@@ -1,0 +1,22 @@
+uuid: 023ac5e9-38a0-4530-8525-291b003530df
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - boot
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: boot_search
+theme: boot
+region: header
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

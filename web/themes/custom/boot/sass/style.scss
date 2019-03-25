@@ -1,5 +1,6 @@
 p{
-    color: maroon;
+    color: violet;
+
 }
 @mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
     background: {
@@ -10,3 +11,4 @@ p{
 .field field--name-field-image field--type-image field--label-hidden field--item {
     @include background('download.png');
 }
+

@@ -1,0 +1,31 @@
+{#
+    {% if content.field_align_to[0]['#markup'] == 'Center' %}
+ <div class="center">
+ {{ content.field_text_to_align_ }}
+ </div>
+ {{ content.field_align_to }}
+{% endif %}
+{% if content.field_align_to[0]['#markup'] == 'Right' %}
+ <div class="right">
+ {{ content.field_text_to_align_ }}
+ </div>
+ {{ content.field_align_to}}
+{% endif %}
+{% if content.field_align_to[0]['#markup'] == 'Left' %}
+ <div class="left">
+ {{ content.field_text_to_align_ }}
+ </div>
+ {{ content.field_align_to }}
+{% endif %} 
+#}
+{% set foo = content.field_align_to[0]['#markup'] %}
+
+<div{{ content_attributes.addClass(foo) }}>
+{{ content.field_text_to_align_ }}
+</div>
+{% set imageurl = file_url(content.field_image__['#items'].entity.uri.value) %}
+<div class="banner" style="background-image:url('{{imageurl}}')">
+    <p>{{content.field_heading}}</p>
+</div>
+
+

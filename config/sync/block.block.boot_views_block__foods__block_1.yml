@@ -1,0 +1,25 @@
+uuid: 14c6262b-f1e5-4120-840b-caef66cabb4d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.foods_
+  module:
+    - views
+  theme:
+    - boot
+id: boot_views_block__foods__block_1
+theme: boot
+region: header
+weight: -7
+provider: null
+plugin: 'views_block:foods_-block_1'
+settings:
+  id: 'views_block:foods_-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

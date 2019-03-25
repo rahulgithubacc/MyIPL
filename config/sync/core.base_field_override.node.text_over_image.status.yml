@@ -1,0 +1,22 @@
+uuid: 819d3e15-d262-4453-b6fb-10f938424040
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.text_over_image
+id: node.text_over_image.status
+field_name: status
+entity_type: node
+bundle: text_over_image
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

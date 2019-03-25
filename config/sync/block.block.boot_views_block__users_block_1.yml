@@ -1,0 +1,24 @@
+uuid: f9c02982-aa06-4d39-87c9-5526301266fb
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.users
+  module:
+    - views
+  theme:
+    - boot
+id: boot_views_block__users_block_1
+theme: boot
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:users-block_1'
+settings:
+  id: 'views_block:users-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

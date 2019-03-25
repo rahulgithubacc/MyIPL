@@ -1,0 +1,7 @@
+weather.settings:
+ path: '/weather'
+ defaults:
+    _form: 'Drupal\weather\Form\configform'
+    _title: 'Custom Module for getting weather updates'
+ requirements:
+    _permission: 'administer site configuration' 

@@ -1,0 +1,21 @@
+uuid: 05e31517-024f-4eb0-b5ae-ff10082cb960
+langcode: en
+status: false
+dependencies:
+  module:
+    - book
+  theme:
+    - boot
+id: boot_booknavigation
+theme: boot
+region: header
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: visible
+  block_mode: 'all pages'
+visibility: {  }

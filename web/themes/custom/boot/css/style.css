@@ -1,5 +1,53 @@
 p {
-  color: gold; }
+  color: violet; }
+  #content
+  {
+    width:70%;
+    position: relative;
+    
+  } 
+  .col-sm-3
+  {
+      width:30%;
+      /* float: right; */
+      right:0px;
+      position: absolute;
+  }
 
-.field field--name-field-image field--type-image field--label-hidden field--item {
-  background-image: url("download.png"); }
+  .col-sm-12{
+    /* width : 50%; */
+    /* background-color: green; */
+  }
+  .row
+  {
+    margin:0px;
+  }
+ body 
+  {
+   margin-top: 0px;
+  }
+  .Left
+  {
+    text-align: left;
+    color:red;
+  }
+  .Right
+  {
+    text-align: right;
+    color:red;
+  }
+  .Center
+  {
+    text-align: center;
+    color:red;
+  }
+  .banner
+  {
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    display:flex;
+    align-items:center;
+    background-size: cover;
+    overflow: hidden;
+  }

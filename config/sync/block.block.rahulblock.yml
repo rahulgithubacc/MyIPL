@@ -1,0 +1,31 @@
+uuid: d2f8fea8-adac-45fc-a271-3cb323f1a4cd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef9a83c3-850d-4f27-94f0-aeae9b48ef42'
+  module:
+    - block_content
+    - system
+  theme:
+    - boot
+id: rahulblock
+theme: boot
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:ef9a83c3-850d-4f27-94f0-aeae9b48ef42'
+settings:
+  id: 'block_content:ef9a83c3-850d-4f27-94f0-aeae9b48ef42'
+  label: 'Rahul Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

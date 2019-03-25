@@ -1,0 +1,21 @@
+uuid: 3529bb16-938c-44ea-8a1f-dd6c62917256
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heading
+    - node.type.text_over_image
+  module:
+    - text
+id: node.text_over_image.field_heading
+field_name: field_heading
+entity_type: node
+bundle: text_over_image
+label: heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

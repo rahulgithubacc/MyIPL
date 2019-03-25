@@ -1,0 +1,45 @@
+uuid: 313b3864-8631-4a74-ab92-c06c53ffc5d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.text_format.body
+    - field.field.node.text_format.field_align_to
+    - field.field.node.text_format.field_text_to_align_
+    - node.type.text_format
+  module:
+    - options
+    - text
+    - user
+id: node.text_format.default
+targetEntityType: node
+bundle: text_format
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_align_to:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_text_to_align_:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 4422b07f-59c7-4f4e-8dbe-ad10fa57057d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_text_to_align_
+field_name: field_text_to_align_
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

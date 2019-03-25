@@ -1,0 +1,47 @@
+uuid: 0c57862d-71bf-40eb-8f17-7634629d6249
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.text_format.body
+    - field.field.node.text_format.field_align_to
+    - field.field.node.text_format.field_text_to_align_
+    - node.type.text_format
+  module:
+    - text
+id: node.text_format.default
+targetEntityType: node
+bundle: text_format
+mode: default
+content:
+  field_align_to:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text_to_align_:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

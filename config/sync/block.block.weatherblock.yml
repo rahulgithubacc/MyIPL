@@ -1,0 +1,20 @@
+uuid: bc5cb19a-e0a2-4867-be97-12afa1b3e9d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - weather
+  theme:
+    - boot
+id: weatherblock
+theme: boot
+region: content
+weight: 0
+provider: null
+plugin: weather_block
+settings:
+  id: weather_block
+  label: 'Weather block'
+  provider: weather
+  label_display: visible
+visibility: {  }

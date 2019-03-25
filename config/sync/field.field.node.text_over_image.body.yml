@@ -1,0 +1,22 @@
+uuid: 22183dc3-ddbc-4700-81ff-901eb26c9ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.text_over_image
+  module:
+    - text
+id: node.text_over_image.body
+field_name: body
+entity_type: node
+bundle: text_over_image
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: d7132cbc-4f4c-4ff1-8109-bbc2f7f84a33
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'text format'
+type: text_format
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

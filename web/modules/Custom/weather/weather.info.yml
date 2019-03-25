@@ -1,0 +1,5 @@
+name: Weather Module
+description: Provides the weather information of a city
+type: module
+version: '8.x-1.26'
+core: '8.x'

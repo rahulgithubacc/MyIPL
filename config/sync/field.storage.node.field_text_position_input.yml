@@ -1,0 +1,20 @@
+uuid: ac9cba20-d6d4-43da-87df-539f15444ade
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_text_position_input
+field_name: field_text_position_input
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
