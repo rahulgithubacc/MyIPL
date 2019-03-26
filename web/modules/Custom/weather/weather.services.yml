@@ -1,4 +1,4 @@
 services:
-  weather.service:
+  weatherservice:
     class: Drupal\weather\Services\MyServices
     

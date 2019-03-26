@@ -17,4 +17,10 @@ settings:
   label: 'Weather block'
   provider: weather
   label_display: visible
+  $city: NewYork
+  $desc: ''
+  city: Chennai
+  desc: 'Capital of TN'
+  img:
+    - '37'
 visibility: {  }
