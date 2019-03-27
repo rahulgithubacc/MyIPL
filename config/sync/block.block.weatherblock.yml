@@ -9,7 +9,7 @@ dependencies:
 id: weatherblock
 theme: boot
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: weather_block
 settings:
@@ -19,8 +19,8 @@ settings:
   label_display: visible
   $city: NewYork
   $desc: ''
-  city: Chennai
-  desc: 'Capital of TN'
+  city: London
+  desc: 'Capital of UK'
   img:
-    - '37'
+    - '39'
 visibility: {  }

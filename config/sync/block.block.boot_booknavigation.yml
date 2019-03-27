@@ -9,7 +9,7 @@ dependencies:
 id: boot_booknavigation
 theme: boot
 region: header
-weight: 0
+weight: 2
 provider: null
 plugin: book_navigation
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: boot_views_block__foods__block_1
 theme: boot
 region: header
-weight: -7
+weight: -1
 provider: null
 plugin: 'views_block:foods_-block_1'
 settings:

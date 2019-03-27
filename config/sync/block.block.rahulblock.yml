@@ -12,7 +12,7 @@ dependencies:
 id: rahulblock
 theme: boot
 region: sidebar_second
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:ef9a83c3-850d-4f27-94f0-aeae9b48ef42'
 settings:

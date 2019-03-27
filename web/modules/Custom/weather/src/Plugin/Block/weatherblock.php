@@ -38,7 +38,7 @@ class weatherblock extends BlockBase {
       $form['img'] = array(
  
         '#type' => 'managed_file',
-   
+        '#upload' => 'public://upload/myimages',
         '#title' => $this->t('img'),
       );
      
@@ -52,15 +52,16 @@ class weatherblock extends BlockBase {
       $this->setConfigurationValue('img',$form_state->getValue('img'));
    }
    public function build() {
+    $service = \Drupal::service('weatherservice');
+    $data=$service->myservice($city);
+    $res=Json::decode($data);
      $config = $this->getConfiguration();
      $city= $config['city'];
      $desc= $config['desc'];
      $imag= $config['img'];
      $img= \Drupal\file\Entity\File::load($imag[0]);
      $path = $img->getFileUri();
-     $service = \Drupal::service('weatherservice');
-     $data=$service->myservice($city);
-     $res=Json::decode($data);
+     
      return [
          '#theme' => 'weather',
          '#city' => $city,

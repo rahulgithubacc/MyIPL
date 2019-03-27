@@ -9,7 +9,7 @@ _core:
 id: boot_page_title
 theme: boot
 region: header
-weight: -50
+weight: -11
 provider: null
 plugin: page_title_block
 settings:

@@ -1,11 +1,34 @@
-<p>  
-{{ city }}
-{{ description }} 
-{{ image }} 
-{{ min_temp }}
-{{ max_temp }}
-{{ pressure }}
-{{ humidity }}
-{{ temp }}
-</p>        
-        
+{#  
+    /**
+ * @file
+ * Custom theme implementation to display weather block.
+ *
+ * Available variables:
+ *-  city->City name which weather is wanted
+ *-  description->Small description about the city
+ *-  min_temp->minimum temparature
+ *-  max_temp->maximum temparature
+ *-  pressure->For Air Pressure
+ *-  humidity->Air humidity
+ *-  temp->weather temparature
+    */
+    #}
+{{ attach_library('weather/rahul')}}    
+<div class ="wrapper"> 
+    <div class ="divimg" style="background-image:url('{{file_url(image)}}')">
+    <div class="citydiv">
+    <img src="modules/Custom/weather/images/rahul.png" class="imgcl">
+    <br><h4 class="para">{{ city }}</h4></div>
+    <div class="descdiv"><h4>{{ description }} </h4></div></div>
+
+    <div class = "mainflex">
+    <div class="mindiv">Min_Temp<br><div class="aa">{{ min_temp }}</div></div>
+    <div class="maxdiv">Max_Temp<br><div class="aa">{{ max_temp }}</div></div>
+    <div class="presdiv">Pressure<br><div class="aa">{{ pressure }}</div></div>
+    <div class="humdiv">Humidity<br><div class="aa">{{ humidity }}</div></div>
+    <div class="tempdiv">Temp<br><div class="aa">{{ temp }}</div> </div>
+    </div>
+    </div>
+</div>      
+
+  
