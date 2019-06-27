@@ -1,37 +1,26 @@
 <?php
-use Drupal\node\NodeInterface;
-use Drupal\Core\Entity\EntityInterface;
 /**
- * Implements hook_ENTITY_TYPE_insert() for node entities.
- *
- * This tests saving a node on node insert.
- *
- * @see \Drupal\node\Tests\NodeSaveTest::testNodeSaveOnInsert()
- */
-function configform_node_insert(NodeInterface $node) {
- 
-  // Set the node title to the node ID and save.
-  if ($node->getType() == 'page') {
-    $title = $node->getTitle();
-    $title = preg_replace('/[^A-Za-z0-9\- ]/', '', $title); 
-    $title = preg_replace('/^\s+|\s+$|\s+(?=\s)/', '', $title);
-    $title = str_replace(' ', '_', $title);
-    $title = strtolower($title);
-    $node->set('field_site' , $title);
-    $node->save();
-  }
-}
-
-function configform_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
-  $id=$entity->id();
-  // $useranme=$entity->label();
-  // \Drupal::logger('configform')->notice('ID:'.$id);
-  // \Drupal::logger('configform')->notice('useraname:'.$useranme);
-  $result=\Drupal::entityQuery('node')
-  ->condition('uid',$id)->execute();
-  $node=\Drupal\node\Entity\Node::loadMultiple($result);
-  foreach($node as $n)
-  {
-    \Drupal::logger('configform')->notice('Title:'.$n->title->value);
+* @file
+* Contains \Drupal\article\Plugin\Block\ArticleBlock.
+*/
+namespace Drupal\configform\Plugin\Block;
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Form\FormInterface;
+/**
+* Provides a 'article' block.
+*
+* @Block(
+*   id = "custom_block",
+*   admin_label = @Translation("Article block"),
+*   category = @Translation("Custom block")
+* )
+*/
+class ArticleBlock extends BlockBase {
+ /**
+  * {@inheritdoc}
+  */
+ public function build() {
+   $form = \Drupal::formBuilder()->getForm('Drupal\configform\Form\SimpleForm');
+   return $form;
   }
 }

@@ -1,5 +1,4 @@
 <?php
-
 namespace Drupal\weather\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormInterface;
@@ -17,36 +16,25 @@ class weatherblock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-
-
-
    public function blockForm($form,FormStateInterface $form_state)
    {
-
      $form['city'] = array(
- 
         '#type' => 'textfield',
-   
         '#title' => $this->t('city'),
       );
       $form['desc'] = array(
- 
         '#type' => 'textfield',
-   
         '#title' => $this->t('desc'),
       );
       $form['img'] = array(
- 
         '#type' => 'managed_file',
         '#upload' => 'public://upload/myimages',
         '#title' => $this->t('img'),
       );
-     
       return $form;
    }
    public function blockSubmit($form,FormStateInterface $form_state)
    {
-      
       $this->setConfigurationValue('city',$form_state->getValue('city'));
       $this->setConfigurationValue('desc',$form_state->getValue('desc'));
       $this->setConfigurationValue('img',$form_state->getValue('img'));
@@ -55,13 +43,32 @@ class weatherblock extends BlockBase {
     $service = \Drupal::service('weatherservice');
     $data=$service->myservice($city);
     $res=Json::decode($data);
+    if(is_float($res['main']['temp_min']))
+    {
+      $res['main']['temp_min'] = round($res['main']['temp_min']);
+    }
+    if(is_float($res['main']['temp_max']))
+    {
+      $res['main']['temp_max'] = round($res['main']['temp_max']);
+    }
+    if(is_float($res['main']['pressure']))
+    {
+      $res['main']['pressure'] = round($res['main']['pressure']);
+    }
+    if(is_float($res['main']['humidity']))
+    {
+      $res['main']['humidity'] = round($res['main']['humidity']);
+    }
+    if(is_float($res['main']['temp']))
+    {
+      $res['main']['temp'] = round($res['main']['temp']);
+    }
      $config = $this->getConfiguration();
      $city= $config['city'];
      $desc= $config['desc'];
      $imag= $config['img'];
      $img= \Drupal\file\Entity\File::load($imag[0]);
      $path = $img->getFileUri();
-     
      return [
          '#theme' => 'weather',
          '#city' => $city,
@@ -74,5 +81,4 @@ class weatherblock extends BlockBase {
          '#temp'=>$res['main']['temp']
      ];
       }
-
 }
